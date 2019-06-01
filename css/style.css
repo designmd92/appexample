@@ -9,7 +9,7 @@ body{
 }
 #content{
     position: relative;
-    background: url('D:/Documentos/Demo WebApp/images/backgroundgame.png');
+    background: url('appexample/images/backgroundgame.png');
     background-position: center;
     width: 40%;
     height: 70%;
