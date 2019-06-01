@@ -30,7 +30,7 @@ function changei(){
     entry = document.getElementById("entry").value = "";
     button = document.getElementById("opt").style.display = 'block';
     content = document.getElementById("content");
-    content.style.background = 'url("D:/Documentos/Demo WebApp/images/backgroundgame.png")';
+    content.style.background = 'url("https://designmd92.github.io/appexample/images/backgroundgame.png")';
     content.style.backgroundPosition = 'center';
     act  = document.getElementById("activity").style.display = 'block';
 }
@@ -41,7 +41,7 @@ function change(){
     congrats = document.getElementById("congrats").style.display = 'none';
     button = document.getElementById("opt").style.display = 'block';
     content = document.getElementById("content");
-    content.style.background = 'url("D:/Documentos/Demo WebApp/images/backgroundgame.png")';
+    content.style.background = 'url("https://designmd92.github.io/appexample/images/backgroundgame.png")';
     content.style.backgroundPosition = 'center';
     act  = document.getElementById("activity").style.display = 'block';
     image  = document.getElementById("image");
