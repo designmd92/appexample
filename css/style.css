@@ -9,7 +9,7 @@ body{
 }
 #content{
     position: relative;
-    background: darkkhaki;
+    background: url('https://raw.githubusercontent.com/designmd92/appexample/master/images/backgroundgame.png');
     background-position: center;
     width: 40%;
     height: 70%;
