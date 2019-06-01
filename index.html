@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script/game.js"></script>
+    <title>App Test</title>
+</head>
+<body onload="show()">
+    <div><h1 id="title">Test English App</h1></div>
+    <div id="content">
+        <div id="table">
+            <div id="activity">
+                <img id="image" width="150px" height="125px">
+                <p id="subimage">This is a..</p>
+                <input type="text" id="entry" placeholder="Type Here.."/><br><br>
+            </div>
+            <div>
+                <h1 id="congrats" onclick="change()">Congrats!!</h1>
+                <h1 id="incorrect" onclick="changei()">Wrong!!</h1>
+            </div>
+            <input type="button" id="opt" value="CHECK" onclick="correct()"/>
+        </div>  
+           
+    </div>
+</body>
+</html>
