@@ -1,28 +1,130 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="script/game.js"></script>
-    <title>App Test</title>
+    <link rel="stylesheet" href="css/fontello.css">
+    <title>Activities</title>
 </head>
-<body onload="show()">
-    <div><h1 id="title">Test English App</h1></div>
-    <div id="content">
-        <div id="table">
-            <div id="activity">
-                <img id="image" width="150px" height="125px">
-                <p id="subimage">This is a..</p>
-                <input type="text" id="entry" placeholder="Type Here.."/><br><br>
+<body>
+    <header>
+        <div class="content">
+            <h1 class="icon-globe" id="title">Editorial Escalar</h1>
+        </div>
+    </header>
+
+    <main>
+        <section id="loginbox">
+            <div class="content">
+                <div id="boxlg">
+                    <h3>Type your Code</h3>
+                    <input type="password" placeholder="Type Here" id="codelog">
+                    <input onclick="login()" type="button" value="Log In" id="btlog">
+                </div>
             </div>
-            <div>
-                <h1 id="congrats" onclick="change()">Congrats!!</h1>
-                <h1 id="incorrect" onclick="changei()">Wrong!!</h1>
+        </section>
+        <section id="gamebox">
+            <div class="content">
+                <div id="controls">
+                    <div class="content">
+                        <label onclick="act1()" id="ch1">Activity 1</label>
+                        <label id="oka1" class="icon-ok"></label>
+                        <label onclick="act2()" id="ch2">Activity 2</label>
+                        <label id="oka2" class="icon-ok"></label>
+                        <label onclick="logout()" id="btlout">Log Out</label>
+                    </div>
+                </div>
+                <div id="activity">
+                    <div id="activity1">
+                        <div class="content">
+                            <div id="titleb"><p>Select all Insects</p></div>
+                            <div>
+                                <img id="imgact1" src="img/act1/img01.png" alt="no">
+                                <input onchange="check(this)" type="checkbox" name="insect" id="op11">Insect
+                                <input onchange="check(this)" type="checkbox" name="no" id="op12">No
+                            </div>
+                            <div>
+                                <img id="imgact2" src="img/act1/img010.png" alt="insect">
+                                <input onchange="check(this)" type="checkbox" name="insect" id="op21">Insect
+                                <input onchange="check(this)" type="checkbox" name="no" id="op22">No
+                            </div>
+                            <div>
+                                <img id="imgact3" src="img/act1/img09.png" alt="no">
+                                <input onchange="check(this)" type="checkbox" name="insect" id="op31">Insect
+                                <input onchange="check(this)" type="checkbox" name="no" id="op32">No
+                            </div>
+                            <div>
+                                <img id="imgact4" src="img/act1/img04.png" alt="insect">
+                                <input onchange="check(this)" type="checkbox" name="insect" id="op41">Insect
+                                <input onchange="check(this)" type="checkbox" name="no" id="op42">No
+                            </div>
+                            <div>
+                                <img id="imgact5" src="img/act1/img08.png" alt="no">
+                                <input onchange="check(this)" type="checkbox" name="insect" id="op51">Insect
+                                <input onchange="check(this)" type="checkbox" name="no" id="op52">No
+                            </div>
+                            <div>
+                                <img id="imgact6" src="img/act1/img03.png" alt="insect">
+                                <input onchange="check(this)" type="checkbox" name="insect" id="op61">Insect
+                                <input onchange="check(this)" type="checkbox" name="no" id="op62">No
+                            </div>
+                            <div id="btcd">
+                                <input id="btc" onclick="won()" type="button" value="Check">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="activity2">
+                        <div class="content">
+                            <div id="titleb2"><p>Write A on the Aquatic animals and T on the Terrestrial animals.</p></div>
+                            <div>
+                                <img id="imgact21" src="img/act2/img01.png" alt="A">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx1">
+                            </div>
+                            <div>
+                                <img id="imgact22" src="img/act2/img02.png" alt="A">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx2">
+                            </div>
+                            <div>
+                                <img id="imgact23" src="img/act2/img03.png" alt="T">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx3">
+                            </div>
+                            <div>
+                                <img id="imgact24" src="img/act2/img04.png" alt="T">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx4">
+                            </div>
+                            <div>
+                                <img id="imgact25" src="img/act2/img05.png" alt="A">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx5">
+                            </div>
+                            <div>
+                                <img id="imgact26" src="img/act2/img06.png" alt="T">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx6">
+                            </div>
+                            <div>
+                                <img id="imgact27" src="img/act2/img07.png" alt="A">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx7">
+                            </div>
+                            <div>
+                                <img id="imgact28" src="img/act2/img08.png" alt="T">
+                                <input type="text" onKeyUp="return limitar(event,this.value,1)" onKeyDown="return limitar(event,this.value,1)" name="" id="tx8">
+                            </div>
+                            <div id="btcd2">
+                                <input id="btc2" onclick="wona2()" type="button" value="Check">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <input type="button" id="opt" value="CHECK" onclick="correct()"/>
-        </div>  
-           
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="content">
+            <h5 class="copy">Designed by MauDaz - &copy; 2019 Prototipos Visuales.</h5>
+        </div>
+    </footer>
+    <script type="text/javascript" src="script/game.js"></script>
+    <script type="text/javascript" src="script/game2.js"></script>
+    <script type="text/javascript" src="script/login.js"></script>
 </body>
 </html>

@@ -1,0 +1,56 @@
+#activity1 .content {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#activity1 .content div {
+    width: 32%;
+    height: 25%;
+    margin-left: 1%;
+    margin-top: 5%;
+    border: 2px dashed black;
+}
+
+#activity1 .content #titleb {
+    width: 99%;
+    display: block;
+    border: none;
+    margin-top: 1%;
+    margin-bottom: -15%;
+}
+
+#activity1 .content #titleb p{
+    width: 99%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#activity1 .content #btcd {
+    border: none;
+}
+
+#activity1 .content div img {
+    width: 25%;
+    margin: 5%;
+    float: left;
+}
+
+#activity1 .content div input {
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+#activity1 .content #btc {
+    margin-left: 38%;
+    margin-top: -2%;
+    padding: 4%;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: lightcoral;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+}

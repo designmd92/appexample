@@ -1,0 +1,73 @@
+@import url('act1.css');
+@import url('act2.css');
+
+#gamebox {
+    display: none;
+}
+
+#controls {
+    width: 30%;
+    background-color: cornflowerblue;
+    border: 6px dashed black;
+}
+
+#controls .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#controls label {
+    width: 50%;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    background-color: lightcoral;
+    border: 1px solid black;
+    box-shadow: 2px 2px 2px black;
+    display: block;
+    cursor: pointer;
+}
+
+#controls #btlout {
+    margin-top: 260px;
+}
+
+#controls #oka1 {
+    display: none;
+    width: 20%;
+    padding: 10px;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    box-shadow: none;
+    color: green;
+}
+
+#controls #oka2 {
+    display: none;
+    width: 20%;
+    padding: 10px;
+    font-size: 30px;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    box-shadow: none;
+    color: green;
+}
+
+#activity {
+    width: 70%;
+    height: 500px;
+    background-color: lightsteelblue;
+    border: 6px dashed black;
+}
+
+#activity1 {
+    display: none;
+}
+
+#activity2 {
+    display: none;
+}
